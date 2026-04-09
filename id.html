@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1 id="title">Welcome!</h1>
-    <button on click="changetext()">Click me</button>
+    <button onclick="changetext()">Click me</button>
     <script>
         function changetext(){
-            let heading = document.getElementByid("title");
-            heading.innertext="Hello Students! Welcome to Javascript DOM.";
-            heading.style.color="blue";
+            let heading = document.getElementById("title");
+            heading.innerText = "Hello Students! Welcome to Javascript DOM.";
+            heading.style.color = "blue";
         }
     </script>
 </body>
