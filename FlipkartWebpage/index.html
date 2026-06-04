@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flipkart Clone</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+<h2>Flipkart</h2>
+<p>Explore <span>Plus+</span></p>
+</div>
+
+<div class="search-box">
+<input type="text"
+id="searchInput"
+placeholder="Search for products, brands and more">
+
+<button>
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+</div>
+
+<div class="nav-links">
+
+<button id="loginBtn">
+<i class="fa-solid fa-user"></i>
+Login
+</button>
+
+<button id="cartBtn">
+<i class="fa-solid fa-cart-shopping"></i>
+Cart
+(<span id="cartCount">0</span>)
+</button>
+
+<button id="themeBtn">
+🌙
+</button>
+
+</div>
+
+</header>
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+
+<div class="category" data-category="Mobiles">
+<img src="https://cdn-icons-png.flaticon.com/512/15/15874.png">
+<p>Mobiles</p>
+</div>
+
+<div class="category" data-category="Fashion">
+<img src="https://cdn-icons-png.flaticon.com/512/892/892458.png">
+<p>Fashion</p>
+</div>
+
+<div class="category" data-category="Electronics">
+<img src="https://cdn-icons-png.flaticon.com/512/3659/3659898.png">
+<p>Electronics</p>
+</div>
+
+<div class="category" data-category="Home">
+<img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png">
+<p>Home</p>
+</div>
+
+<div class="category" data-category="Beauty">
+<img src="https://cdn-icons-png.flaticon.com/512/3163/3163203.png">
+<p>Beauty</p>
+</div>
+
+</section>
+
+<!-- BANNER -->
+
+<section class="banner">
+
+<div class="banner-content">
+
+<h1>Big Billion Days Sale</h1>
+
+<p>Up To 80% Off On Top Brands</p>
+
+<button id="shopNowBtn">
+Shop Now
+</button>
+
+</div>
+
+<div class="banner-image">
+
+<img id="bannerSlider"
+src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=700">
+
+</div>
+
+</section>
+
+<!-- TOP DEALS -->
+
+<section class="product-section">
+
+<h2>Top Deals</h2>
+
+<div class="slider-container">
+
+<button class="slider-btn left">
+❮
+</button>
+
+<div class="product-slider" id="productContainer">
+
+<!-- PRODUCT 1 -->
+
+<div class="product-card"
+data-name="Smart Watch"
+data-category="Electronics"
+data-price="1499">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://m.media-amazon.com/images/I/61icsCcbdKL._SL1500_.jpg">
+
+<h3>Smart Watch</h3>
+
+<p>₹1499</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 2 -->
+
+<div class="product-card"
+data-name="Bluetooth Speaker"
+data-category="Electronics"
+data-price="1299">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://static.bhphoto.com/images/images2000x2000/1490053916_1319165.jpg">
+
+<h3>Bluetooth Speaker</h3>
+
+<p>₹1299</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 3 -->
+
+<div class="product-card"
+data-name="Camera"
+data-category="Electronics"
+data-price="3999">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://www.topvaluereviews.net/wp-content/uploads/2019/04/71TSinb4usL._SL1500_.jpg">
+
+<h3>Camera</h3>
+
+<p>₹3999</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 4 -->
+
+<div class="product-card"
+data-name="Monitor"
+data-category="Electronics"
+data-price="7999">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://img.freepik.com/free-photo/view-computer-monitor-display_23-2150757453.jpg?w=2000">
+
+<h3>Monitor</h3>
+
+<p>₹7999</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 5 -->
+
+<div class="product-card"
+data-name="Headphones"
+data-category="Electronics"
+data-price="1999">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700">
+
+<h3>Headphones</h3>
+
+<p>₹1999</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 6 -->
+
+<div class="product-card"
+data-name="Shoes"
+data-category="Fashion"
+data-price="2499">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700">
+
+<h3>Shoes</h3>
+
+<p>₹2499</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 7 -->
+
+<div class="product-card"
+data-name="T-Shirt"
+data-category="Fashion"
+data-price="799">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700">
+
+<h3>T-Shirt</h3>
+
+<p>₹799</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+<!-- PRODUCT 8 -->
+
+<div class="product-card"
+data-name="Sofa"
+data-category="Home"
+data-price="15999">
+
+<span class="wishlist">
+❤
+</span>
+
+<img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=700">
+
+<h3>Sofa</h3>
+
+<p>₹15999</p>
+
+<button class="add-cart">
+Add To Cart
+</button>
+
+</div>
+
+</div>
+
+<button class="slider-btn right">
+❯
+</button>
+
+</div>
+
+</section>
+
+<!-- LOGIN MODAL -->
+
+<div class="modal" id="loginModal">
+
+<div class="modal-content">
+
+<span class="close" id="closeLogin">
+&times;
+</span>
+
+<h2>Login</h2>
+
+<input type="email"
+placeholder="Email">
+
+<input type="password"
+placeholder="Password">
+
+<button>
+Login
+</button>
+
+</div>
+
+</div>
+
+<!-- CART MODAL -->
+
+<div class="modal" id="cartModal">
+
+<div class="modal-content">
+
+<span class="close"
+id="closeCart">
+
+&times;
+
+</span>
+
+<h2>Your Cart</h2>
+
+<div id="cartItems">
+
+No Items Added
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PRODUCT DETAILS -->
+
+<div class="modal"
+id="productModal">
+
+<div class="modal-content">
+
+<span class="close"
+id="closeProduct">
+
+&times;
+
+</span>
+
+<img id="modalImage">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalPrice"></p>
+
+<button id="buyNowBtn">
+Buy Now
+</button>
+
+</div>
+
+</div>
+
+<!-- BACK TO TOP -->
+
+<button id="topBtn">
+↑
+</button>
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+<h4>About</h4>
+<p>Contact Us</p>
+<p>About Us</p>
+<p>Careers</p>
+</div>
+
+<div>
+<h4>Help</h4>
+<p>Payments</p>
+<p>Shipping</p>
+<p>Returns</p>
+</div>
+
+<div>
+<h4>Social</h4>
+<p>Instagram</p>
+<p>LinkedIn</p>
+<p>GitHub</p>
+</div>
+
+</div>
+
+<p class="copyright">
+© 2026 Flipkart Clone | Anshita Garg
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
