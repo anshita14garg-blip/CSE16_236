@@ -1,0 +1,435 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #141414;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  height: 82px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding: 0 5%;
+  background: #050505;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav h1 {
+  margin: 0;
+  color: #e50914;
+  font-size: 29px;
+  letter-spacing: 1px;
+}
+
+.menu {
+  display: flex;
+  gap: 28px;
+}
+
+.menu button {
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu button:hover,
+.menu .active {
+  font-weight: bold;
+}
+
+.nav-icons {
+  margin-left: auto;
+  font-size: 25px;
+}
+
+main {
+  padding: 20px 4% 60px;
+}
+
+.page-main {
+  min-height: 100vh;
+  padding-top: 55px;
+}
+
+.row {
+  margin-bottom: 48px;
+}
+
+.row h2,
+.page-main h2 {
+  margin: 0 0 14px;
+  font-size: 26px;
+}
+
+.row-wrap {
+  position: relative;
+}
+
+.row-content {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  padding: 2px 0 8px;
+}
+
+.row-content::-webkit-scrollbar {
+  display: none;
+}
+
+.movie-card {
+  flex: 0 0 250px;
+  width: 250px;
+  padding: 0;
+  color: white;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 250px;
+  height: 150px;
+  display: block;
+  object-fit: contain;
+  background: #000;
+  border-radius: 4px;
+  transition: transform 0.2s;
+}
+
+.movie-card:hover img {
+  transform: scale(1.03);
+}
+
+.movie-card span {
+  display: block;
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+.slide {
+  position: absolute;
+  top: 35px;
+  height: 85px;
+  width: 42px;
+  border: 0;
+  color: white;
+  background: rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.slide:hover {
+  background: rgba(229, 9, 20, 0.8);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.top-card {
+  position: relative;
+  flex: 0 0 180px;
+  width: 180px;
+  height: 205px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.top-card b {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  font-size: 185px;
+  line-height: 150px;
+  color: #141414;
+  -webkit-text-stroke: 4px #888;
+}
+
+.top-card img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 105px;
+  height: 155px;
+  object-fit: contain;
+  background: #000;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.my-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.my-list-item {
+  width: 250px;
+}
+
+.my-list-item .movie-card {
+  width: 250px;
+}
+
+.remove-button {
+  width: 250px;
+  margin-top: 8px;
+  padding: 10px;
+  border: 0;
+  border-radius: 4px;
+  color: white;
+  background: #e50914;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.empty-list {
+  color: #bbb;
+}
+
+.modal-bg {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 20;
+}
+
+.modal {
+  width: min(850px, 95vw);
+  overflow: hidden;
+  position: relative;
+  background: #181818;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 2;
+  width: 42px;
+  height: 42px;
+  color: white;
+  background: #181818;
+  border: 0;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.modal-image {
+  height: 390px;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.modal-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #181818, transparent 70%);
+}
+
+.modal-title {
+  position: absolute;
+  left: 45px;
+  bottom: 35px;
+  z-index: 1;
+}
+
+.modal-title h2 {
+  font-size: 42px;
+  margin: 0 0 15px;
+}
+
+.play-button {
+  padding: 12px 25px;
+  color: black;
+  background: white;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-info {
+  padding: 0 45px 30px;
+  color: #ddd;
+}
+
+.modal-info b {
+  color: #46d369;
+}
+
+.add-button {
+  padding: 10px 16px;
+  color: white;
+  background: #e50914;
+  border: 0;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.added-message {
+  color: #46d369;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  nav {
+    height: 65px;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  nav h1 {
+    font-size: 22px;
+  }
+
+  .menu {
+    gap: 13px;
+  }
+
+  .menu button {
+    font-size: 12px;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .movie-card,
+  .my-list-item,
+  .my-list-item .movie-card,
+  .remove-button {
+    width: 190px;
+  }
+
+  .movie-card {
+    flex-basis: 190px;
+  }
+
+  .movie-card img {
+    width: 190px;
+    height: 120px;
+  }
+
+  .row h2,
+  .page-main h2 {
+    font-size: 21px;
+  }
+}
+nav {
+  position: relative;
+}
+
+.icon-button {
+  border: 0;
+  color: white;
+  background: transparent;
+  font-size: 26px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.icon-button:hover {
+  color: #e50914;
+}
+
+.profile-menu {
+  position: absolute;
+  right: 4%;
+  top: 68px;
+  width: 170px;
+  padding: 15px;
+  background: #181818;
+  border: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.profile-menu button {
+  border: 0;
+  padding: 8px;
+  color: white;
+  background: #333;
+  cursor: pointer;
+  text-align: left;
+}
+
+.search-box {
+  position: fixed;
+  top: 82px;
+  right: 5%;
+  z-index: 15;
+  width: 300px;
+  padding: 12px;
+  background: #181818;
+  border: 1px solid #444;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  background: #333;
+  border: 1px solid #666;
+}
+
+.search-results {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.search-results button {
+  padding: 10px;
+  color: white;
+  background: transparent;
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+}
+
+.search-results button:hover {
+  background: #333;
+}
+
+/* Top 10 images now fill their card instead of appearing tiny. */
+.top-card img {
+  width: 125px;
+  height: 180px;
+  object-fit: cover;
+  background: #000;
+}
