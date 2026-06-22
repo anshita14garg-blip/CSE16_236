@@ -1,0 +1,25 @@
+🎬 Netflix Clone
+
+A simple Netflix-inspired web application built using React, JavaScript, HTML, and CSS. This project was created to practice React fundamentals, component-based development, and responsive web design.
+
+🚀 Live Demo
+https://cse-16-236-hc78uh349-anshita-garg.vercel.app/
+
+🛠️ Tech Stack
+- React
+- JavaScript
+- HTML5
+- CSS3
+
+✨ Features
+- Netflix-style homepage
+- Responsive design
+- Reusable React components
+- Movie cards with images
+- Clean and modern UI
+
+👩‍💻 Author
+Anshita Garg
+
+📌 Purpose
+This project was built as a beginner-friendly React project to learn component-based UI development and modern frontend workflows.
