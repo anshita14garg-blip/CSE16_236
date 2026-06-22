@@ -27,6 +27,16 @@ const tvShows = [
     image: "https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/52dae4c7-2ab1-4bb9-ab1c-8100fd54e2f9/5406c807-d062-4484-a6ae-54aaf6806b03?host=wbd-images.prod-vod.h264.io&partner=beamcom&w=500",
     topImage: "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   },
+  {
+  name: "The Witcher",
+  image: "https://images.justwatch.com/poster/241357130/s718/the-witcher.jpg",
+  topImage: "https://m.media-amazon.com/images/M/MV5BMmEzODI0ZjQtYzA0Mi00MzBiLWE1ZmUtYmJmNzYzZTZiYjhkXkEyXkFqcGc@._V1_.jpg",
+},
+{
+  name: "Squid Game",
+  image: "https://images.ctfassets.net/4cd45et68cgf/4DkWg6dS2D4iM8fqzRkK3f/f4e42a5b7a7c2ef8d1db6e0fd7f3d0f6/Squid_Game.jpg",
+  topImage: "https://m.media-amazon.com/images/M/MV5BNDQ5YjNlNzQtZjM4Ny00NzVkLTk0NTItYWQ4ZjQ0NzQxOTM2XkEyXkFqcGc@._V1_.jpg",
+},
 ];
 
 const movieList = [
@@ -55,6 +65,16 @@ const movieList = [
     image: "https://www.yashrajfilms.com/images/default-source/news/sultan.jpg?sfvrsn=45cef6cc_4",
     topImage: "https://m.media-amazon.com/images/M/MV5BMmM4NzJjNTQtZGU0Mi00NmJhLTkxMWQtYThiYjA2YjlhMjRkXkEyXkFqcGc@._V1_.jpg",
   },
+  {
+  name: "Jawan",
+  image: "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+  topImage: "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+},
+{
+  name: "Pathaan",
+  image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg",
+  topImage: "https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg",
+},
 ];
 
 const topTen = [
@@ -65,6 +85,9 @@ const topTen = [
   movieList[1],
   tvShows[3],
   movieList[4],
+  tvShows[5],
+  movieList[5],
+  movieList[6],
 ];
 
 const allMovies = [...tvShows, ...movieList];
