@@ -30,7 +30,7 @@ const tvShows = [
   {
   name: "Ginny & Georgia",
   image: "https://ntvb.tmsimg.com/assets/p19369806_b_h8_af.jpg?w=960&h=540",
-  topImage: "https://static.wikia.nocookie.net/riordanfans/images/8/86/Ginny_%26_Georgia_S2_Poster.jpg/revision/latest?cb=20230105063900",
+  topImage: "https://m.media-amazon.com/images/M/MV5BNGY4NjYzYTYtMDhjYy00MmQ2LTkwNDktNzUxMGNkMDI5MmZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
 },
 {
   name: "Squid Game",
