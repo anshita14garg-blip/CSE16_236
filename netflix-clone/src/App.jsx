@@ -28,14 +28,14 @@ const tvShows = [
     topImage: "https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
   },
   {
-  name: "The Witcher",
-  image: "https://images.justwatch.com/poster/241357130/s718/the-witcher.jpg",
-  topImage: "https://m.media-amazon.com/images/M/MV5BMmEzODI0ZjQtYzA0Mi00MzBiLWE1ZmUtYmJmNzYzZTZiYjhkXkEyXkFqcGc@._V1_.jpg",
+  name: "Ginny & Georgia",
+  image: "https://ntvb.tmsimg.com/assets/p19369806_b_h8_af.jpg?w=960&h=540",
+  topImage: "https://static.wikia.nocookie.net/riordanfans/images/8/86/Ginny_%26_Georgia_S2_Poster.jpg/revision/latest?cb=20230105063900",
 },
 {
   name: "Squid Game",
-  image: "https://images.ctfassets.net/4cd45et68cgf/4DkWg6dS2D4iM8fqzRkK3f/f4e42a5b7a7c2ef8d1db6e0fd7f3d0f6/Squid_Game.jpg",
-  topImage: "https://m.media-amazon.com/images/M/MV5BNDQ5YjNlNzQtZjM4Ny00NzVkLTk0NTItYWQ4ZjQ0NzQxOTM2XkEyXkFqcGc@._V1_.jpg",
+  image: "https://cdn.prod.website-files.com/6695547d26d9da9a04cfb486/6872e648c27c24c625d73a0d_Should%20My%20Kid%20Watch%20Squid%20Game.webp",
+  topImage: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkFTEclBXDehzT6h8G8JeKXP1y2kw8RXjW8A&s",
 },
 ];
 
@@ -66,13 +66,13 @@ const movieList = [
     topImage: "https://m.media-amazon.com/images/M/MV5BMmM4NzJjNTQtZGU0Mi00NmJhLTkxMWQtYThiYjA2YjlhMjRkXkEyXkFqcGc@._V1_.jpg",
   },
   {
-  name: "Jawan",
-  image: "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
-  topImage: "https://upload.wikimedia.org/wikipedia/en/3/39/Jawan_film_poster.jpg",
+  name: "Dhurandhar",
+  image: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/medium/dhurandhar-et00452447-1764571309.jpg",
+  topImage: "https://m.media-amazon.com/images/M/MV5BMTA3MDQ3ODAtNjcyMi00ODQ3LWEyZDMtMjliMzM0MGU3N2ZhXkEyXkFqcGc@._V1_.jpg",
 },
 {
   name: "Pathaan",
-  image: "https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg",
+  image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw8nKyCz0giR3q8dhkK3D2kab3xT8vD6dQ1g&s",
   topImage: "https://upload.wikimedia.org/wikipedia/en/c/c3/Pathaan_film_poster.jpg",
 },
 ];
