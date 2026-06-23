@@ -19,4 +19,4 @@ If you are developing a production application, we recommend using TypeScript wi
 A simple Netflix-inspired web application built using React, JavaScript, HTML, and CSS. This project was created to practice React fundamentals, component-based development, and responsive web design.
 
 🚀 Live Demo
-https://cse-16-236-hc78uh349-anshita-garg.vercel.app/
+https://cse-16-236.vercel.app/
