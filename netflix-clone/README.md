@@ -1,22 +1,167 @@
-# React + Vite
+# 🎬 Netflix Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Netflix-inspired streaming platform** built with **React + Vite**. This project replicates the core browsing experience of Netflix with categorized content, interactive carousels, detailed preview modals, and a personalized **My List** feature using Local Storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+🔗 https://cse-16-236-aw3k1e4h2-anshita-garg.vercel.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-🎬 Netflix Clone
+- 🎥 Netflix-inspired modern UI
+- 🏠 Home page with multiple content sections
+- 📺 Dedicated TV Shows page
+- 🎬 Dedicated Movies page
+- ⭐ Top 10 Movies carousel
+- ➡️ Horizontal sliders with navigation controls
+- 🔍 Interactive movie/show cards
+- 📖 Detailed preview modal for every title
+- ❤️ Add or remove titles from **My List**
+- 💾 Persistent storage using Local Storage
+- 👤 Profile dropdown menu
+- 📱 Responsive design for different screen sizes
+- ⚡ Built with Vite for fast performance
 
-A simple Netflix-inspired web application built using React, JavaScript, HTML, and CSS. This project was created to practice React fundamentals, component-based development, and responsive web design.
+---
 
-🚀 Live Demo
-https://cse-16-236.vercel.app/
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React.js | Frontend Framework |
+| JavaScript (ES6+) | Application Logic |
+| HTML5 | Structure |
+| CSS3 | Styling & Responsive Design |
+| Vite | Development & Build Tool |
+| Local Storage | Persist My List Data |
+
+---
+
+## 📂 Project Structure
+
+```text
+Netflix-Clone/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── data/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# 📸 Project Preview
+
+## 🏠 Home Page
+
+![Home Page](./panel1.png)
+
+---
+
+## 🎬 Trending & Categories
+
+![Categories](./Panel2.png)
+
+---
+
+## 📺 TV Shows Page
+
+![TV Shows](./TVShowspanel.png)
+
+---
+
+## 🎥 Movies Page
+
+![Movies](./Moviespanel.png)
+
+---
+
+## ❤️ Add to My List
+
+Clicking a title opens a detailed preview where users can add it to **My List**.
+
+![Add To My List](./addedmylistpanel.png)
+
+---
+
+## 📑 My List
+
+Saved titles remain available using **Local Storage**, even after refreshing the page.
+
+![My List](./Mylistpanel.png)
+
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/anshita14garg-blip/CSE16_236.git
+```
+
+Navigate to the project
+
+```bash
+cd netflix-clone
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Start the development server
+
+```bash
+npm run dev
+```
+
+Build for production
+
+```bash
+npm run build
+```
+
+---
+
+## 💡 Future Improvements
+
+- User Authentication
+- TMDB API Integration
+- Search Functionality
+- Video Player
+- Genre Filtering
+- Dark/Light Theme
+- Firebase Backend
+- Watch History
+- Continue Watching Section
+
+---
+
+## 👩‍💻 Author
+
+**Anshita Garg**
+
+GitHub: https://github.com/anshita14garg-blip
+
+---
+
+## ⭐ Show Your Support
+
+If you liked this project, consider giving it a ⭐ on GitHub!
