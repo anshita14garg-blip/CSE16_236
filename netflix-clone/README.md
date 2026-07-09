@@ -41,29 +41,6 @@ A modern **Netflix-inspired streaming platform** built with **React + Vite**. Th
 
 ---
 
-## 📂 Project Structure
-
-```text
-Netflix-Clone/
-│
-├── public/
-│
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── data/
-│   ├── styles/
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-├── vite.config.js
-└── README.md
-```
-
----
-
 # 📸 Project Preview
 
 ## 🏠 Home Page
